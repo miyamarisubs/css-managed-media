@@ -1,0 +1,9 @@
+{
+    "name": "css-managed-media",
+    "version": "0.0.1",
+    "description": "CSS managed media runtime",
+    "main": "dist/index.js",
+    "repository": "https://github.com/miyamarisubs/css-managed-media",
+    "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
+    "license": "MIT"
+}
