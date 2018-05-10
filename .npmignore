@@ -1,0 +1,53 @@
+#############
+# IDE trash #
+#############
+
+# IntelliJ IDEA
+
+.idea/
+
+*.iml
+
+# Visual Studio Code
+
+.vscode/
+
+# Cloud9
+
+.c9/
+
+###################
+# Ecosystem trash #
+###################
+
+# Babel
+
+.babelrc.js
+
+# Git
+
+.gitignore
+
+# Prettier
+
+prettier.config.js
+
+# TypeScript
+
+tsconfig.json
+
+# Various
+
+*.log
+
+#################
+# Project trash #
+#################
+
+build/
+cache/
+coverage/
+src/
+temp/
+typings/
+var/

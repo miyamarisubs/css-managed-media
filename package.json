@@ -1,9 +1,29 @@
 {
     "name": "css-managed-media",
-    "version": "0.0.1",
+    "version": "0.0.2-alpha.0",
     "description": "CSS managed media runtime",
     "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "repository": "https://github.com/miyamarisubs/css-managed-media",
     "author": "Marina Miyaoka <miyaokamarina@gmail.com> (https://t.me/miyaokamarina)",
-    "license": "MIT"
+    "license": "MIT",
+    "scripts": {
+        "build": "babel -o ./dist/index.js ./src/index.ts && tsc -d --emitDeclarationOnly --declarationDir ./dist/ ./src/index.ts",
+        "postinstall": "mkdirp build coverage cache dist temp var build",
+        "clean": "rimraf build coverage cache dist temp var build",
+        "postclean": "yarn run postinstall",
+        "clean-dist": "rimraf \"dist/**/*\""
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.0.0-beta.46"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.0.0-beta.46",
+        "@babel/core": "^7.0.0-beta.46",
+        "@babel/preset-env": "^7.0.0-beta.46",
+        "@babel/preset-stage-0": "^7.0.0-beta.46",
+        "@babel/preset-typescript": "^7.0.0-beta.46",
+        "prettier": "^1.12.1",
+        "typescript": "^2.8.3"
+    }
 }
